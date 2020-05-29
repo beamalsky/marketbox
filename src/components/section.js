@@ -5,7 +5,7 @@ import Slider from "./slider";
 import Statement from "./statement";
 import Text from "./text";
 import Prism from "prismjs";
-import { navigate } from '@reach/router'
+import { navigate, useLocation } from '@reach/router'
 import queryString from "query-string"
 
 import "./source.css";
@@ -38,9 +38,9 @@ function dictionaryToQueryString (dict) {
   return querystring
 }
 
-function Section({ ast, astState, page, rawText, location }) {
-  const [viewSource, setViewSource] = useState();
-  const searchParams = queryString.parse(location.search)
+function Section({ ast, astState, page, rawText}) {
+  const location = useLocation()
+  const searchParams = queryString.parse(location.search || '')
   const state = useMemo(readFields, [astState, searchParams]);
 
 
@@ -103,16 +103,6 @@ function Section({ ast, astState, page, rawText, location }) {
         return undefined;
     }
   }
-
-  useEffect(() => {
-    setViewSource(false);
-  }, [page]);
-
-  useEffect(() => {
-    if (viewSource) {
-      Prism.highlightAll();
-    }
-  }, [viewSource]);
 
   return (
     <div id="text">

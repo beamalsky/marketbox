@@ -30,7 +30,6 @@ const IndexPage = () => {
         astState={astState}
         rawText={rawText}
         page={page}
-        location={window.location}
       />
     </Layout>
   )
