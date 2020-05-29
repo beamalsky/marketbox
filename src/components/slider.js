@@ -1,12 +1,12 @@
 import React from "react";
 import "./slider.css";
 
-function Slider(props) {
-  function handleChange(event) {
-    props.addField(props.variable, event.target.value);
+class Slider extends React.Component {
+  handleChange = (event) => {
+    this.props.addField(this.props.variable, event.target.value)
   }
 
-  function getStep(s, max) {
+  getStep = (s, max) => {
     if (s.match(/\./)) {
       return s.replace(/.+?\.(\d+)\d$/, "0.$11");
     } else {
@@ -18,18 +18,21 @@ function Slider(props) {
       }
     }
   }
-  return (
-    <span className="slider">
-      <input
-        type="range"
-        onChange={(e) => handleChange(e)}
-        value={props.valueFromState}
-        step={getStep(props.value.formatString, props.value.max)}
-        max={props.value.max}
-        min={props.value.min}
-      />
-    </span>
-  );
+
+  render() {
+    return (
+      <span className="slider">
+        <input
+          type="range"
+          onChange={(e) => this.handleChange(e)}
+          value={this.props.valueFromState}
+          step={this.getStep(this.props.value.formatString, this.props.value.max)}
+          max={this.props.value.max}
+          min={this.props.value.min}
+        />
+      </span>
+    )
+  }
 }
 
-export default Slider;
+export default Slider

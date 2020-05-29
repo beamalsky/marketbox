@@ -1,11 +1,12 @@
 import "util";
 import numeral from "numeral";
-import useSearchParams from "@postlight/use-search-params";
 import React, { useMemo, useState, useEffect } from "react";
 import Slider from "./slider";
 import Statement from "./statement";
 import Text from "./text";
 import Prism from "prismjs";
+import { navigate } from '@reach/router'
+import queryString from "query-string"
 
 import "./source.css";
 import "./section.css";
@@ -18,22 +19,42 @@ Prism.languages.account = {
     ...template.interpolation,
     pattern: /((?:^|[^\\])(?:\\{2})*){(?:[^{}]|{(?:[^{}]|{[^}]*})*})+}/,
   },
-};
+}
 
-function Section({ ast, astState, page, rawText }) {
+function dictionaryToQueryString (dict) {
+  var querystring = '?'
+
+  Object.keys(dict).forEach(function(key, i) {
+    var q = key + '=' + dict[key].toString()
+    if (i == 0) {
+      querystring += q
+    } else {
+      querystring += '&' + q
+    }
+    return(i)
+    return(querystring)
+  })
+
+  return querystring
+}
+
+function Section({ ast, astState, page, rawText, location }) {
   const [viewSource, setViewSource] = useState();
-  const searchParams = useSearchParams("replace");
+  const searchParams = queryString.parse(location.search)
   const state = useMemo(readFields, [astState, searchParams]);
 
+
   function addField(k, v) {
-    searchParams.set(k, v);
-    return v;
+    state[k] = v
+    const path = dictionaryToQueryString(state)
+    navigate(path)
+    return v
   }
 
   function readFields() {
     return Object.fromEntries(
       Object.keys(astState).map((k) => {
-        return [k, searchParams.get(k) || astState[k]];
+        return [k, searchParams[k] || astState[k]];
       })
     );
   }

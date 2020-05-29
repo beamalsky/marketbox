@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@postlight/use-search-params": "postlight/use-search-params",
     "bootstrap": "4.4.1",
     "expr-eval": "^2.0.2",
     "gatsby": "^2.19.45",
@@ -20,12 +19,12 @@
     "parsimmon": "^1.13.0",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",
+    "query-string": "^6.12.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-emoji-render": "^1.2.4",
-    "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.2.0"
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

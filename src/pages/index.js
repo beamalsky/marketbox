@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import Section from "../components/section"
 import parse from "../components/smarter-text"
 import SEO from "../components/seo"
-import { BrowserRouter, Route } from "react-router-dom";
 
 const textFiles = [
   {
@@ -24,19 +23,16 @@ const IndexPage = () => {
   const [ast, astState, rawText] = textVars[page]
 
   return (
-    <BrowserRouter>
-      <Route path="/">
-        <Layout>
-          <SEO title="Home" />
-          <Section
-            ast={ast}
-            astState={astState}
-            rawText={rawText}
-            page={page}
-          />
-        </Layout>
-      </Route>
-    </BrowserRouter>
+    <Layout>
+      <SEO title="Home" />
+      <Section
+        ast={ast}
+        astState={astState}
+        rawText={rawText}
+        page={page}
+        location={window.location}
+      />
+    </Layout>
   )
 }
 
