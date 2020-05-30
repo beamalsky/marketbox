@@ -8,8 +8,20 @@ import SEO from "../components/seo"
 
 const textFiles = [
   {
-    filename: 'marketbox',
-    text: '🥕 If we have donations from {100:donation_people} people 💃 each week at an average of ${100:donation_amount} 💰, the Market Box program will have ${=donation_people * donation_amount:donation_total} 🤑 to support Star Farm’s local agriculture and {=donation_total / 45:boxes} boxes of groceries 🍅 for people in need.'
+    filename: 'intro1',
+    text: 'Experimental Station is working with Star Farms Chicago to provide boxes of locally sourced produce, eggs, and bread to our neighbors on the South Side, supporting the community and the farmers that feed us.'
+  },
+  {
+    filename: 'intro2',
+    text: 'Because Link cards can’t be used online, right now people using SNAP are not only shut out from accessing affordable, local, organically grown produce, but also from supporting small farmers. Through mutual aid, our ecosystem can grow stronger during the pandemic!'
+  },
+  {
+    filename: 'sentence1',
+    text: 'If {0-500:people} people 💃 donate an average of ${0-100:donation} 💰, Market Box will raise ${=people * donation:total}: enough to fund 200 local food boxes 📦 per week for {=total / 800 :weeks} weeks!  That ${=people * donation:total_two} goes directly to Star Farm Chicago, to grow veggies 🥕🍆🍅🥒🍑🥔🍓,  buy eggs 🍳 and bread 🥖, and get it to our neighbors. Your dollars support small farmers and producers and pay {=total/500:drivers} drivers a living wage to get groceries to doorsteps. 🏡🚗'
+  },
+  {
+    filename: 'sentence2',
+    text: 'Say you give ${0-100:donation_two} and share Market Box on Instagram/Facebook/Twitter. 📨 You have {0-5000:followers} followers. 🕺 If {0-50:seen}% see that post, you’ve told {=followers * seen / 100:shares} people about Market Box. 👩‍👩‍👦 If {0-50:percent}% of those people give an average of ${0-100:donation_three}, your friends have funded {=shares * percent / 100 * donation_three / 40:boxes} Market Boxes! 👪👨‍👦‍👦‍👩‍👩‍👦'
   }
 ]
 
@@ -19,18 +31,20 @@ const textVars = textFiles.reduce(
 );
 
 const IndexPage = () => {
-  const page = 'marketbox'
-  const [ast, astState, rawText] = textVars[page]
-
   return (
     <Layout>
       <SEO title="Home" />
-      <Section
-        ast={ast}
-        astState={astState}
-        rawText={rawText}
-        page={page}
-      />
+      {textFiles.map((element) => {
+          var page = element.filename
+          var [ast, astState, rawText] = textVars[page]
+          return <Section
+            ast={ast}
+            astState={astState}
+            rawText={rawText}
+            page={page}
+          />
+        }
+      )}
     </Layout>
   )
 }

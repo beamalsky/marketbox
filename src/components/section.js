@@ -41,7 +41,7 @@ function dictionaryToQueryString (dict) {
 function Section({ ast, astState, page, rawText}) {
   const location = useLocation()
   const searchParams = queryString.parse(location.search || '')
-  const state = useMemo(readFields, [astState, searchParams]);
+  const state = useMemo(readFields, [astState, searchParams])
 
 
   function addField(k, v) {
@@ -56,7 +56,7 @@ function Section({ ast, astState, page, rawText}) {
       Object.keys(astState).map((k) => {
         return [k, searchParams[k] || astState[k]];
       })
-    );
+    )
   }
 
   function toComponents(o, i) {
@@ -105,7 +105,7 @@ function Section({ ast, astState, page, rawText}) {
   }
 
   return (
-    <div id="text">
+    <div id="text" className="mt-3">
       {ast.map(toComponents)}
     </div>
   );
