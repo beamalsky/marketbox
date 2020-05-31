@@ -3,7 +3,10 @@ import "./slider.css";
 
 class Slider extends React.Component {
   handleChange = (event) => {
-    this.props.addField(this.props.variable, event.target.value)
+    this.props.vizState.setStateFromVariableKey(
+      this.props.variable,
+      event.target.value
+    )
   }
 
   getStep = (s, max) => {

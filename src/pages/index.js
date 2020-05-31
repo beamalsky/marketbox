@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
+import VizContext from "../context/vizcontext"
 import Layout from "../components/layout"
 import Section from "../components/section"
 import parse from "../components/smarter-text"
@@ -21,7 +21,7 @@ const textFiles = [
   },
   {
     filename: 'sentence2',
-    text: 'Say you give ${0-100:donation_two} and share Market Box on Instagram/Facebook/Twitter. 📨 You have {0-5000:followers} followers. 🕺 If {0-50:seen}% see that post, you’ve told {=followers * seen / 100:shares} people about Market Box. 👩‍👩‍👦 If {0-50:percent}% of those people give an average of ${0-100:donation_three}, your friends have funded {=shares * percent / 100 * donation_three / 40:boxes} Market Boxes! 👪👨‍👦‍👦‍👩‍👩‍👦'
+    text: 'Say you give ${0-100:donation_two} and share Market Box on Instagram/Facebook/Twitter. 📨 You have {0-5000:followers} followers. 🕺 If {0-50:seen}% see that post, you’ve told {=followers * seen / 100:shares} people about Market Box. 👩‍👩‍👦 If {0-50:percent}% of those people give an average of ${0-100:donation_three}, you and your friends have funded {=shares * percent / 100 * donation_three + donation_two/ 40:boxes} Market Boxes!  👪👨‍👦‍👦‍👩‍👩‍👦'
   }
 ]
 
@@ -32,20 +32,26 @@ const textVars = textFiles.reduce(
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <SEO title="Home" />
-      {textFiles.map((element) => {
-          var page = element.filename
-          var [ast, astState, rawText] = textVars[page]
-          return <Section
-            ast={ast}
-            astState={astState}
-            rawText={rawText}
-            page={page}
-          />
-        }
-      )}
-    </Layout>
+    <VizContext.Consumer>
+        {vizState => (
+          <Layout>
+            <SEO title="Home" />
+            {textFiles.map((element) => {
+                var page = element.filename
+                var [ast, astState, rawText] = textVars[page]
+
+                return <Section
+                  ast={ast}
+                  astState={astState}
+                  rawText={rawText}
+                  page={page}
+                  vizState={vizState}
+                />
+              }
+            )}
+          </Layout>
+        )}
+    </VizContext.Consumer>
   )
 }
 

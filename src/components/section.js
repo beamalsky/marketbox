@@ -1,12 +1,10 @@
 import "util";
 import numeral from "numeral";
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo } from "react";
 import Slider from "./slider";
 import Statement from "./statement";
 import Text from "./text";
 import Prism from "prismjs";
-import { navigate, useLocation } from '@reach/router'
-import queryString from "query-string"
 
 import "./source.css";
 import "./section.css";
@@ -21,40 +19,14 @@ Prism.languages.account = {
   },
 }
 
-function dictionaryToQueryString (dict) {
-  var querystring = '?'
-
-  Object.keys(dict).forEach(function(key, i) {
-    var q = key + '=' + dict[key].toString()
-    if (i == 0) {
-      querystring += q
-    } else {
-      querystring += '&' + q
-    }
-    return(i)
-    return(querystring)
-  })
-
-  return querystring
-}
-
-function Section({ ast, astState, page, rawText}) {
-  const location = useLocation()
-  const searchParams = queryString.parse(location.search || '')
-  const state = useMemo(readFields, [astState, searchParams])
-
-
-  function addField(k, v) {
-    state[k] = v
-    const path = dictionaryToQueryString(state)
-    navigate(path)
-    return v
-  }
+function Section({ ast, astState, page, rawText, vizState }) {
+  const stateUpdates = vizState.stateDict
+  const state = useMemo(readFields, [astState, stateUpdates])
 
   function readFields() {
     return Object.fromEntries(
       Object.keys(astState).map((k) => {
-        return [k, searchParams[k] || astState[k]];
+        return [k, stateUpdates[k] || astState[k]];
       })
     )
   }
@@ -69,9 +41,9 @@ function Section({ ast, astState, page, rawText}) {
           <span className="full-statement" key={i}>
             <Slider
               key={o.variable}
-              addField={addField}
               valueFromState={state[o.variable]}
               i={i}
+              vizState={vizState}
               {...o}
             />
             <Statement valueFromState={state[o.variable]} i={i} {...o} />
