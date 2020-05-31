@@ -17,7 +17,7 @@ const textFiles = [
   },
   {
     filename: 'sentence1',
-    text: 'If {0-500:people} people 💃 donate an average of ${0-100:donation} 💰, Market Box will raise ${=people * donation:total}: enough to fund 200 local food boxes 📦 per week for {=total / 800 :weeks} weeks!  That ${=people * donation:total_two} goes directly to Star Farm Chicago, to grow veggies 🥕🍆🍅🥒🍑🥔🍓,  buy eggs 🍳 and bread 🥖, and get it to our neighbors. Your dollars support small farmers and producers and pay {=total/500:drivers} drivers a living wage to get groceries to doorsteps. 🏡🚗'
+    text: 'If {0-500:people} people 💃 donate an average of ${0-100:donation} 💰, Market Box will raise ${=people * donation:total}: enough to fund 200 local food boxes 📦 per week for {=total / 800 :weeks} weeks!  That ${=people * donation:total_two} goes directly to Star Farm Chicago, to grow veggies 🥕🍆🍅🥒🍑🥔🍓,  buy eggs 🍳 and bread 🥖, and get it to our neighbors. Your dollars support small farmers and producers and pay {=total/500:drivers} drivers a living wage to get groceries to doorsteps. 🏡 🚗'
   },
   {
     filename: 'sentence2',

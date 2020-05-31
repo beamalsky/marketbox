@@ -20,7 +20,7 @@ Prism.languages.account = {
 }
 
 function Section({ ast, astState, page, rawText, vizState }) {
-  const stateUpdates = vizState.stateDict
+  const stateUpdates = vizState
   const state = useMemo(readFields, [astState, stateUpdates])
 
   function readFields() {
