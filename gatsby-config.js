@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Market Box`,
-    description: ``,
+    description: `Help buy 1000+ boxes of local produce, eggs, and bread for our neighbors!`,
     author: `@beamalsky`,
+    url: "https://marketbox.netlify.app", // No trailing slash allowed!
+    image: "/card.jpg"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
