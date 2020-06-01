@@ -13,6 +13,7 @@
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-sharp": "^2.4.13",
+    "gatsby-plugin-typography": "^2.5.2",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
     "numeral": "^2.0.6",
@@ -23,7 +24,11 @@
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-emoji-render": "^1.2.4",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "styled-components": "^5.1.1",
+    "typography": "^0.16.19",
+    "typography-theme-st-annes": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

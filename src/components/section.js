@@ -66,7 +66,7 @@ function Section({ ast, astState, page, rawText, vizState }) {
         const n = evaluate(o);
         const sign = n > 0 ? "positive" : "negative";
         return (
-          <span className={"expression " + sign} key={i}>
+          <span className={"expression " + sign} key={i} style={{ fontWeight: 'bold' }}>
             {format(n)}
           </span>
         );
@@ -77,7 +77,10 @@ function Section({ ast, astState, page, rawText, vizState }) {
   }
 
   return (
-    <div id="text" className="mt-3">
+    <div
+      id="text"
+      className="my-2 mx-4 p-2"
+    >
       {ast.map(toComponents)}
     </div>
   );

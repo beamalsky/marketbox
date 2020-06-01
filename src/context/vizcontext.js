@@ -8,7 +8,7 @@ const VizContext = React.createContext(defaultState)
 
 class VizProvider extends React.Component {
   state = {
-    people: 100,
+    people: 700,
     donation: 40,
     donation_two: 40,
     followers: 1000,
