@@ -29,7 +29,7 @@ const IndexPage = (data) => {
     <VizContext.Consumer>
         {vizState => (
           <Layout>
-            <SEO />
+            <SEO title="Home" />
             <Row>
               <Col className="ml-md-4 mr-0">
                 <h4 className="my-2 mx-4 p-2">
