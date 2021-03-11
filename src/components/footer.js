@@ -15,10 +15,7 @@ const Footer = () => (
       }}
     >
       <p>
-        Footer text goes here. Additional credits maybe? Market Box is a project of...
-      </p>
-      <p>
-        This website was made by Bea Malsky and uses the <a href="https://github.com/postlight/account">Account</a> tool from <a href="https://postlight.com/labs">Postlight Labs</a>. All code is open source <a href="https://github.com/beamalsky/marketbox">here</a>.
+        <em>Market Box is a project from the organizations at 6100 S. Blackstone Ave:  Invisible Institute, Experimental Station, South Side Weekly, and Build Coffee. We partner with Middlebrow and Local Foods to source high quality groceries from across the Midwest.</em>
       </p>
     </div>
   </footer>
