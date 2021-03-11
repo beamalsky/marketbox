@@ -3,8 +3,8 @@ module.exports = {
     title: `Market Box`,
     description: `Market Box is a mutual aid project that sources food from small farms and distributes it for free across the South Side of Chicago`,
     author: `@marketboxchi`,
-    url: "https://marketbox.netlify.app", // No trailing slash allowed!
-    image: "/card.jpg"
+    url: "https://marketboxchi.org", // No trailing slash allowed!
+    image: "/card.png"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

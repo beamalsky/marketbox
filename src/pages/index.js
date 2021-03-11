@@ -39,7 +39,10 @@ const IndexPage = () => {
             </Button>
           </div>
           <p className="my-2 mx-4 p-2">
-            We root this mutual aid initiative in a long tradition of collaboration between organizations in our building, the Experimental Station, located in the Woodlawn neighborhood of Chicago. Our list of recipients on the South Side of Chicago includes 400 households, self-identified as Black and low-income: by maintaining a slow-growing rotation of recipients, we’re building long-term relationships of care. We rely on a broad, grassroots base of recurring donations to fuel our work, allowing us to commit to local farms and South Side families one growing season at a time: every donation acts twice, funding an ethical food system and putting food on our neighbor’s tables.
+            We root this mutual aid initiative in a long tradition of collaboration between organizations in our building, the Experimental Station, located in the Woodlawn neighborhood of Chicago. Our list of recipients on the South Side of Chicago includes 400 households, self-identified as Black and low-income.
+          </p>
+          <p className="my-2 mx-4 p-2">
+            By maintaining a slow-growing rotation of recipients, <strong>we’re building long-term relationships of care.</strong> We rely on a broad, grassroots base of recurring donations to fuel our work, allowing us to commit to local farms and South Side families one growing season at a time: every donation acts twice, <strong>funding an ethical food system</strong> and <strong>putting food on our neighbor’s tables</strong>.
           </p>
           <ImageSunflowers />
         </Col>
