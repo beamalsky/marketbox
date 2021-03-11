@@ -18,7 +18,13 @@ const Header = ({ siteTitle }) => (
         textAlign: `center`,
       }}
     >
-      <h1 style={{ margin: 0, fontSize: '5rem', letterSpacing: '.5rem' }}>
+      <h1 style={{ 
+        margin: 0, 
+        fontSize: '5rem', 
+        letterSpacing: '.5rem',
+        lineHeight: '4rem',
+        paddingBottom: '1rem',
+      }}>
         <Link
           to="/"
           style={{
