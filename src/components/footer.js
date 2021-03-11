@@ -11,15 +11,15 @@ const Footer = () => (
       style={{
         margin: `0 auto`,
         padding: `1.45rem 1.0875rem`,
-        maxWidth: '1200px'
+        maxWidth: '1200px',
+        textAlign: `center`,
       }}
     >
       <p>
-        Footer text goes here. Additional credits maybe? Market Box is a project of...
+        <em>Market Box is a project from the organizations at 6100 S. Blackstone Ave: <a href="https://invisible.institute/">Invisible Institute</a>, <a href="https://experimentalstation.org/">Experimental Station</a>, <a href="https://southsideweekly.com/">South Side Weekly</a>, and <a href="https://buildcoffee.org/">Build Coffee</a>.</em><br />
+        <em>We partner with Middlebrow and Local Foods to source high quality groceries from across the Midwest.</em>
       </p>
-      <p>
-        This website was made by Bea Malsky and uses the <a href="https://github.com/postlight/account">Account</a> tool from <a href="https://postlight.com/labs">Postlight Labs</a>. All code is open source <a href="https://github.com/beamalsky/marketbox">here</a>.
-      </p>
+      <p><em>Photos by Davon Clark, Anwuli Anigbo, and Hannah Nyhart. Website by Bea Malsky.</em></p>
     </div>
   </footer>
 )
