@@ -32,13 +32,19 @@ const Header = ({ siteTitle }) => (
       <h4>is a mutual aid project that sources food from small farms and distributes it for free across the South Side of Chicago</h4>
       <Row className="justify-content-md-center my-3">
         <Col xs lg="2">
-          <Link>Home</Link>
+          <Link to="/">
+            Home
+          </Link>
         </Col>
         <Col xs lg="2">
-          <Link>About</Link>
+          <Link to="/about">
+            About
+          </Link>
         </Col>
         <Col xs lg="2">
-          <Link>Join Us</Link>
+          <Link to="/join-us">
+            Join Us
+          </Link>
         </Col>
       </Row>
     </div>
