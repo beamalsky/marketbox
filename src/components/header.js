@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         textAlign: `center`,
       }}
     >
-      <h1 style={{ margin: 0, fontSize: '4rem' }}>
+      <h1 style={{ margin: 0, fontSize: '5rem', letterSpacing: '.5rem' }}>
         <Link
           to="/"
           style={{
@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          MARKET BOX
         </Link>
       </h1>
       <h4>is a mutual aid project that sources food from small farms and distributes it for free across the South Side of Chicago</h4>

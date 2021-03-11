@@ -1,3 +1,5 @@
+@import "./typography.css";
+
 :root {
   --dark-green-color: #929525;
   --light-green-color: #c1c530;
@@ -12,6 +14,8 @@ html {
 }
 body {
   margin: 0;
+  /* font-family: "IBM Plex Sans", "Source Sans Pro", sans-serif; */
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -74,6 +78,7 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
   text-align: center;
+  font-family: "Bayard", "Source Serif Pro", serif;
 }
 mark {
   background-color: #ff0;
@@ -539,7 +544,7 @@ button {
   border-color: var(--dark-green-color);
   color: var(--dark-green-color);
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 1rem 5rem;
 }
 .btn-primary:hover,
@@ -555,8 +560,8 @@ button {
   border-color: var(--dark-yellow-color);
   color: var(--dark-yellow-color);
   font-weight: 900;
-  font-size: 1.5rem;
-  padding: 1rem 5rem;
+  font-size: 1.6rem;
+  padding: 0.8rem 4rem;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
