@@ -30,8 +30,11 @@ const Layout = ({ children }) => {
     <Container fluid>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main
-        className="my-1 mx-2 mx-md-5"
-        style={{ backgroundColor: 'rgba(255,255,255, 0.8)' }}
+        style={{
+          margin: `1rem auto`,
+          maxWidth: `1000px`,
+          backgroundColor: 'rgba(255,255,255, 0.8)'
+        }}
       >
         {children}
       </main>
