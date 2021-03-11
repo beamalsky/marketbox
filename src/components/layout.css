@@ -2,7 +2,7 @@
   --dark-green-color: #929525;
   --light-green-color: #c1c530;
   --dark-yellow-color: #cc8f10;
-  --light-yellow-color: #fff27c;
+  --light-yellow-color: #ffe27c;
 }
 
 html {
@@ -49,11 +49,13 @@ template {
 a {
   background-color: transparent;
   color: var(--dark-green-color);
+  font-weight: 700;
 }
 a:active,
 a:hover {
   outline-width: 0;
   color: var(--light-green-color);
+  text-decoration: none;
 }
 abbr[title] {
   border-bottom: none;
