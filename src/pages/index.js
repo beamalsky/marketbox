@@ -11,6 +11,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Market Box" />
+      <div className="d-sm-none">
+        <ImageSunflowers/>
+      </div>
       <Row className="align-items-center">
         <Col className="" sm={12} md={7}>
           <p className="my-2 mx-4 p-2">
@@ -46,7 +49,9 @@ const IndexPage = () => {
           <p className="my-2 mx-4 p-2">
             By maintaining a slow-growing rotation of recipients, <strong>we’re building long-term relationships of care.</strong> We rely on a broad, grassroots base of recurring donations to fuel our work, allowing us to commit to local farms and South Side families one growing season at a time: every donation acts twice, <strong>funding an ethical food system</strong> and <strong>putting food on our neighbor’s tables</strong>.
           </p>
-          <ImageSunflowers />
+          <div className="d-none d-sm-block">
+            <ImageSunflowers/>
+          </div>
         </Col>
         <Col className="" sm={12} md={5}>
           <ImageWheelbarrow />
