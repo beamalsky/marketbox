@@ -3,8 +3,6 @@ import { Row, Col, Button } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import ImageGreatRoom from "../components/imagegreatroom"
-import ImageSunflowers from "../components/imagesunflowers"
-import ImagePacking from "../components/imagepacking"
 import SEO from "../components/seo"
 
 const JoinUsPage = () => {

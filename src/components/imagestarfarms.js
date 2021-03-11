@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const ImageWheelbarrow = () => {
+const ImageStarFarms = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "starfarms_davonclark.png" }) {
@@ -29,4 +29,4 @@ const ImageWheelbarrow = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="my-3 mx-4 p-2" />
 }
 
-export default ImageWheelbarrow
+export default ImageStarFarms
