@@ -1,8 +1,8 @@
 :root {
-  --dark-green-color: #348f50;
-  --light-green-color: #4ed97a;
-  --dark-yellow-color: #e4bd4e;
-  --light-yellow-color: #fad056;
+  --dark-green-color: #929525;
+  --light-green-color: #c1c530;
+  --dark-yellow-color: #cc8f10;
+  --light-yellow-color: #fff27c;
 }
 
 html {
@@ -533,19 +533,28 @@ button {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .btn-primary {
-  background-color: var(--dark-green-color);
-  border-color: var(--dark-green-color)
+  background-color: white;
+  border-color: var(--dark-green-color);
+  color: var(--dark-green-color);
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1rem 5rem;
 }
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
   background-color: var(--light-green-color);
-  border-color: var(--light-green-color)
+  border-color: var(--light-green-color);
+  color: black;
+  font-weight: 900;
 }
 .btn-secondary {
   background-color: white;
   border-color: var(--dark-yellow-color);
-  color: black;
+  color: var(--dark-yellow-color);
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1rem 5rem;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
@@ -553,4 +562,5 @@ button {
   background-color: var(--light-yellow-color);
   border-color: var(--light-yellow-color);
   color: black;
+  font-weight: 900;
 }

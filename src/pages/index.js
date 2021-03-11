@@ -20,6 +20,7 @@ const IndexPage = () => {
             <Button
               variant="primary"
               size="lg"
+              className="mx-4 my-2"
               onClick={()=> window.open(
                 "https://invisible.ourpowerbase.net/civicrm/contribute/transact?reset=1&id=5", "_blank"
               )}
@@ -30,6 +31,7 @@ const IndexPage = () => {
             <Button
               variant="secondary"
               size="lg"
+              className="mx-4 my-2"
               onClick={()=> window.open(
                 "https://airtable.com/shr1PQl1JKn2gvrXJ",
                 "_blank"
