@@ -20,21 +20,30 @@ const IndexPage = () => {
             <strong>Thousands of deliveries in,</strong> we're turning an emergency pandemic response into a year-round, sustainable ecosystem. Our network is a place to generate <strong>community power</strong>, <strong>take care of one another</strong>, and <strong>exchange critical information as neighbors</strong>.
           </p>
           <div class="text-center">
+          <Button
+              variant="secondary"
+              size="sm"
+              className="mx-2 my-2"
+              onClick={()=> window.open(
+                "https://bit.ly/drivemarketbox", "_blank"
+              )}
+            >
+              Volunteer
+            </Button>
             <Button
               variant="primary"
-              size="lg"
-              className="mx-4 my-2"
+              size="sm"
+              className="mx-2 my-2"
               onClick={()=> window.open(
                 "https://invisible.ourpowerbase.net/civicrm/contribute/transact?reset=1&id=5", "_blank"
               )}
             >
               Donate
             </Button>
-            {' '}{' '}{' '}{' '}
             <Button
-              variant="secondary"
-              size="lg"
-              className="mx-4 my-2"
+              variant="success"
+              size="sm"
+              className="mx-2 my-2"
               onClick={()=> window.open(
                 "https://airtable.com/shr1PQl1JKn2gvrXJ",
                 "_blank"
