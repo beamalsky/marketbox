@@ -5,6 +5,8 @@
   --light-green-color: #c1c530;
   --dark-yellow-color: #cc8f10;
   --light-yellow-color: #ffe27c;
+  --dark-pink-color: #e16c83;
+  --light-pink-color: #f4b0b3;
 }
 
 html {
@@ -543,8 +545,8 @@ button {
   border-color: var(--dark-green-color);
   color: var(--dark-green-color);
   font-weight: 900;
-  font-size: 1.7rem;
-  padding: 1rem 5rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
 }
 .btn-primary:hover,
 .btn-primary:active,
@@ -559,8 +561,8 @@ button {
   border-color: var(--dark-yellow-color);
   color: var(--dark-yellow-color);
   font-weight: 900;
-  font-size: 1.6rem;
-  padding: 0.8rem 4rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
@@ -570,4 +572,19 @@ button {
   color: black;
   font-weight: 900;
 }
-
+.btn-success {
+  background-color: white;
+  border-color: var(--dark-pink-color);
+  color: var(--dark-pink-color);
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+  background-color: var(--light-pink-color);
+  border-color: var(--light-pink-color);
+  color: black;
+  font-weight: 900;
+}
