@@ -12,7 +12,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Market Box" />
       <div className="d-sm-none">
-        <ImageSunflowers/>
+        <ImageSunflowers />
       </div>
       <Row className="align-items-center">
         <Col className="" sm={12} md={7}>
@@ -20,11 +20,11 @@ const IndexPage = () => {
             <strong>Thousands of deliveries in,</strong> we're turning an emergency pandemic response into a year-round, sustainable ecosystem. Our network is a place to generate <strong>community power</strong>, <strong>take care of one another</strong>, and <strong>exchange critical information as neighbors</strong>.
           </p>
           <div class="text-center">
-          <Button
+            <Button
               variant="secondary"
               size="sm"
               className="mx-2 my-2"
-              onClick={()=> window.open(
+              onClick={() => window.open(
                 "https://bit.ly/drivemarketbox", "_blank"
               )}
             >
@@ -34,8 +34,8 @@ const IndexPage = () => {
               variant="primary"
               size="sm"
               className="mx-2 my-2"
-              onClick={()=> window.open(
-                "https://invisible.ourpowerbase.net/civicrm/contribute/transact?reset=1&id=5", "_blank"
+              onClick={() => window.open(
+                "http://donorbox.org/market-box-chicago", "_blank"
               )}
             >
               Donate
@@ -44,7 +44,7 @@ const IndexPage = () => {
               variant="success"
               size="sm"
               className="mx-2 my-2"
-              onClick={()=> window.open(
+              onClick={() => window.open(
                 "https://airtable.com/shr1PQl1JKn2gvrXJ",
                 "_blank"
               )}
@@ -59,7 +59,7 @@ const IndexPage = () => {
             By maintaining a slow-growing rotation of recipients, <strong>we’re building long-term relationships of care.</strong> We rely on a broad, grassroots base of recurring donations to fuel our work, allowing us to commit to local farms and South Side families one growing season at a time: every donation acts twice, <strong>funding an ethical food system</strong> and <strong>putting food on our neighbor’s tables</strong>.
           </p>
           <div className="d-none d-sm-block">
-            <ImageSunflowers/>
+            <ImageSunflowers />
           </div>
         </Col>
         <Col className="" sm={12} md={5}>
