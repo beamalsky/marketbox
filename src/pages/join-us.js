@@ -13,13 +13,13 @@ const JoinUsPage = () => {
         <Col sm={12} md={5}>
           <div class="text-center">
             <Button
-                variant="primary"
-                size="lg"
-                className="my-2"
-                onClick={()=> window.open(
-                  "https://invisible.ourpowerbase.net/civicrm/contribute/transact?reset=1&id=5", "_blank"
-                )}
-              >
+              variant="primary"
+              size="lg"
+              className="my-2"
+              onClick={() => window.open(
+                "http://donorbox.org/market-box-chicago", "_blank"
+              )}
+            >
               Donate
             </Button>
           </div>
