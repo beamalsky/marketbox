@@ -19,7 +19,7 @@ const DonorboxWidget = () => (
         maxWidth: "500px",
         minWidth: "250px",
         maxHeight: "none!important",
-        marginBottom: 0
+        marginBottom: 0,
       }}>
     </iframe>
   </>
