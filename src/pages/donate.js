@@ -12,7 +12,6 @@ const DonatePage = () => {
     <SEO title="Market Box" />
     <Row className="justify-content-center">
       <Col className="" sm={12} md={7}>
-        <ImageEggs />
         <p className="my-2 mx-4 p-2">
           <DonorboxWidget />
         </p>
@@ -38,6 +37,7 @@ const DonatePage = () => {
         <p className="my-2 mx-4 p-2">
           Ecosystems of Care is a 501(c)3 organization registered in the United States of America (EIN 87-1345182).
         </p>
+        <ImageEggs />
       </Col>
     </Row>
   </Layout>
