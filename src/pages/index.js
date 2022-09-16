@@ -1,5 +1,6 @@
 import React from "react"
 import { Row, Col, Button } from "react-bootstrap"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import ImageWheelbarrow from "../components/imagewheelbarrow"
@@ -34,11 +35,10 @@ const IndexPage = () => {
               variant="primary"
               size="sm"
               className="mx-2 my-2"
-              onClick={() => window.open(
-                "http://donorbox.org/market-box-chicago", "_blank"
-              )}
             >
-              Donate
+              <Link to="/donate">
+                Donate
+              </Link>
             </Button>
             <Button
               variant="success"
@@ -53,7 +53,7 @@ const IndexPage = () => {
             </Button>
           </div>
           <p className="my-2 mx-4 p-2">
-            We root this mutual aid initiative in a long tradition of collaboration between organizations in our building, the Experimental Station, located in the Woodlawn neighborhood of Chicago. Our list of recipients on the South Side of Chicago includes 400 households, self-identified as Black and low-income.
+            We root this mutual aid initiative in a long tradition of collaboration in the Woodlawn neighborhood of Chicago. Our list of recipients on the South Side of Chicago includes 400 households, self-identified as Black and low-income.
           </p>
           <p className="my-2 mx-4 p-2">
             By maintaining a slow-growing rotation of recipients, <strong>we’re building long-term relationships of care.</strong> We rely on a broad, grassroots base of recurring donations to fuel our work, allowing us to commit to local farms and South Side families one growing season at a time: every donation acts twice, <strong>funding an ethical food system</strong> and <strong>putting food on our neighbor’s tables</strong>.

@@ -52,6 +52,11 @@ const Header = ({ siteTitle }) => (
             Join Us
           </Link>
         </Col>
+        <Col xs lg="2">
+          <Link to="/donate">
+            Donate
+          </Link>
+        </Col>
       </Row>
     </div>
   </header>

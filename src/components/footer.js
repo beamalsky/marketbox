@@ -11,15 +11,14 @@ const Footer = () => (
       style={{
         margin: `0 auto`,
         padding: `1.45rem 1.0875rem`,
-        maxWidth: '1200px',
+        maxWidth: '900px',
         textAlign: `center`,
       }}
     >
       <p>
-        <em>Market Box is a project from the organizations at 6100 S. Blackstone Ave: <a href="https://invisible.institute/">Invisible Institute</a>, <a href="https://experimentalstation.org/">Experimental Station</a>, <a href="https://southsideweekly.com/">South Side Weekly</a>, and <a href="https://buildcoffee.org/">Build Coffee</a>.</em><br />
-        <em>We partner with Middlebrow and Local Foods to source high quality groceries from across the Midwest.</em>
+        <em>Market Box is based in Chicago’s Woodlawn neighborhood and works across the South Side. We are a project of Ecosystems of Care, a 501(c)3 organization registered in the United States of America (EIN 87-1345182).</em>
       </p>
-      <p><em>Photos by Davon Clark, Anwuli Anigbo, and Hannah Nyhart<br />Website by Bea Malsky</em></p>
+      <p><em>Photos by Davon Clark, Anwuli Anigbo, and Kristi Jan Hoover<br />Website by Bea Malsky</em></p>
     </div>
   </footer>
 )
