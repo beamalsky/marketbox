@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import ImageEggs from "../components/imageeggs"
+import DonorboxWidget from "../components/donorboxwidget"
 import SEO from "../components/seo"
 
 const DonatePage = () => {
@@ -13,7 +14,7 @@ const DonatePage = () => {
       <Col className="" sm={12} md={7}>
         <ImageEggs />
         <p className="my-2 mx-4 p-2">
-          Market Box is a volunteer-driven mutual aid project that bulk-buys food from small farms and distributes it for free to over 400 households per month across the South Side of Chicago. Recurring tax deductible donations mean we can commit to South Side families and local farmers a full season at a time. Can you help us build?
+          <DonorboxWidget />
         </p>
         <p className="my-2 mx-4 p-2">
           Market Box is a project of Ecosystems of Care, a 501(c)(3) formed in 2021 to ensure the sustainability and independence of Market Box and other projects on the South Side of Chicago. Your donation to Ecosystems of Care, NFP, directly supports Market Box.
