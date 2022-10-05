@@ -19,7 +19,7 @@ const AboutPage = () => {
           Market Box is a project of Ecosystems of Care, a 501(c)3 organization registered in the United States of America (EIN 87-1345182). 
         </p>
         <p className="my-2 mx-4 p-2">
-          <strong>Our History</strong>
+          <strong>Our History</strong><br />
           Market Box was born as an emergency pandemic response in April 2020, to fight many of our neighbors’ growing food insecurity. We built this mutual aid initiative on a long tradition of collaboration between organizations in the Experimental Station, located in Chicago’s Woodlawn Neighborhood. In a moment when food stamps could not be used online, we began Market Box with the 61st Street Farmers Market, to make sure our neighbors who used the Market’s LINK matching program could still access produce, eggs, bread, and meat.
         </p>
         <p className="my-2 mx-4 p-2">

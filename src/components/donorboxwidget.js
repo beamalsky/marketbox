@@ -9,11 +9,12 @@ const DonorboxWidget = () => (
     <iframe
       src="https://donorbox.org/embed/market-box-chicago"
       name="donorbox"
+      title="donorbox"
       allowpaymentrequest="allowpaymentrequest"
       seamless="seamless"
       frameborder="0"
       scrolling="no"
-      height="750px"
+      height="515px"
       width="100%"
       style={{
         maxWidth: "500px",
