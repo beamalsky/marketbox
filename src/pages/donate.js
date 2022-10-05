@@ -12,6 +12,10 @@ const DonatePage = () => {
     <SEO title="Market Box" />
     <Row className="justify-content-center">
       <Col className="" sm={12} md={7}>
+        <ImageEggs />
+        <p className="my-2 mx-4 p-2">
+          Market Box is a volunteer-driven mutual aid project that bulk-buys food from small farms and distributes it for free to over 400 households per month across the South Side of Chicago. Recurring tax deductible donations mean we can commit to South Side families and local farmers a full season at a time. Can you help us build?
+        </p>
         <p className="my-2 mx-4 p-2">
           <DonorboxWidget />
         </p>
@@ -37,7 +41,6 @@ const DonatePage = () => {
         <p className="my-2 mx-4 p-2">
           Ecosystems of Care is a 501(c)3 organization registered in the United States of America (EIN 87-1345182).
         </p>
-        <ImageEggs />
       </Col>
     </Row>
   </Layout>
