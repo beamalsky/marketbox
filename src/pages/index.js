@@ -3,9 +3,10 @@ import { Row, Col, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import ImageWheelbarrow from "../components/imagewheelbarrow"
-import ImageSunflowers from "../components/imagesunflowers"
-import ImagePacking from "../components/imagepacking"
+import ImageHome01 from "../components/imagehome01"
+import ImageHome02 from "../components/imagehome02"
+import ImageHome03 from "../components/imagehome03"
+import ImageHome04 from "../components/imagehome04"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
@@ -13,7 +14,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Market Box" />
       <div className="d-sm-none">
-        <ImageSunflowers />
+        <ImageHome01 />
       </div>
       <Row className="align-items-center">
         <Col className="" sm={12} md={7}>
@@ -59,12 +60,13 @@ const IndexPage = () => {
             By maintaining a slow-growing rotation of recipients, <strong>we’re building long-term relationships of care.</strong> We rely on a broad, grassroots base of recurring donations to fuel our work, allowing us to commit to local farms and South Side families one growing season at a time: every donation acts twice, <strong>funding an ethical food system</strong> and <strong>putting food on our neighbor’s tables</strong>.
           </p>
           <div className="d-none d-sm-block">
-            <ImageSunflowers />
+            <ImageHome01 />
           </div>
         </Col>
         <Col className="" sm={12} md={5}>
-          <ImageWheelbarrow />
-          <ImagePacking />
+          <ImageHome04 />
+          <ImageHome03 />
+          <ImageHome02 />
         </Col>
       </Row>
     </Layout>

@@ -2,7 +2,7 @@ import React from "react"
 import { Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
-import ImageStarFarms from "../components/imagestarfarms"
+import ImageAbout01 from "../components/imageabout01"
 import SEO from "../components/seo"
 
 const AboutPage = () => {
@@ -11,7 +11,7 @@ const AboutPage = () => {
     <SEO title="Market Box" />
     <Row className="justify-content-center">
       <Col className="" sm={12} md={7}>
-        <ImageStarFarms />
+        <ImageAbout01 />
         <p className="my-2 mx-4 p-2">
           Market Box crowd-funds to bulk-buy produce from across the midwest, and distributes over 420 bags of food each month to our network of families on the South Side. Our twice-monthly, volunteer-led distribution days are based at First Presbyterian Church in Chicago’s Woodlawn neighborhood. Together, we seek to build a local food system rooted in mutuality and community care.
         </p>
