@@ -1,6 +1,6 @@
 import React from "react"
 import { Row, Col, Button } from "react-bootstrap"
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 import Layout from "../components/layout"
 import ImageHome01 from "../components/imagehome01"
@@ -36,10 +36,9 @@ const IndexPage = () => {
               variant="primary"
               size="sm"
               className="mx-2 my-2"
+              onClick={() => navigate("/donate")}
             >
-              <Link to="/donate">
-                Donate
-              </Link>
+              Donate
             </Button>
             <Button
               variant="success"
