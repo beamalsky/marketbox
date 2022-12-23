@@ -1,6 +1,6 @@
 import React from "react"
 import { Row, Col, Button } from "react-bootstrap"
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 import Layout from "../components/layout"
 import ImageGreatRoom from "../components/imagegreatroom"
@@ -17,10 +17,9 @@ const JoinUsPage = () => {
               variant="primary"
               size="lg"
               className="my-2"
+              onClick={() => navigate("/donate")}
             >
-              <Link to="/donate">
-                Donate
-              </Link>
+              Donate
             </Button>
           </div>
           <p className="my-2 mx-4 p-2">
