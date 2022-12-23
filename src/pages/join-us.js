@@ -18,6 +18,7 @@ const JoinUsPage = () => {
               size="lg"
               className="my-2"
               onClick={() => navigate("/donate")}
+              role="link"
             >
               Donate
             </Button>

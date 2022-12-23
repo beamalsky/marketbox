@@ -37,6 +37,7 @@ const IndexPage = () => {
               size="sm"
               className="mx-2 my-2"
               onClick={() => navigate("/donate")}
+              role="link"
             >
               Donate
             </Button>
